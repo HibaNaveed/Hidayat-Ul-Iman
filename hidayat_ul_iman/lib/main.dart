@@ -11,6 +11,7 @@ import 'package:just_audio/just_audio.dart';
 import 'package:hidayat_ul_iman/prayertimes.dart';
 import 'package:quran/quran.dart' as quran;
 import 'package:quran/surah_data.dart';
+import 'package:hidayat_ul_iman/Tafaseer.dart';
 
 // import 'package:just_audio/just_audio.dart';
 
@@ -54,7 +55,7 @@ class _SplashState extends State<Splash> {
               Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Nextscreen(),
+                    builder: (context) => Tafaseer(),
                   ))
             });
     super.initState();
@@ -606,6 +607,9 @@ class _PageTwoState extends State<PageTwo> {
                 ),
                 Tab(
                   child: Text("Recitation"),
+                ),
+                Tab(
+                  child: Text("Tafaseer"),
                 )
               ],
               labelColor: Color(0xff617aea),
